@@ -7,14 +7,6 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("dbus-update-activation-environment --systemd --all")
 	hl.exec_cmd("systemctl --user start hyprland-session.target")
 end)
-
--- LIVE WALLPAPER
--- hl.exec_cmd(
--- 	'mpvpaper -o "no-audio loop" eDP-1 "'
--- 		.. os.getenv("HOME")
--- 		.. '/Pictures/Live Wallpapers/pokemon-emerald-title-screen-pixel-HD-live-wallpaper.mp4"'
--- )
-
 -- DMS_STARTUP_END
 
 hl.config({
@@ -28,8 +20,8 @@ hl.config({
 			tap_to_click = true,
 			natural_scroll = true,
 		},
-		repeat_delay = 200,
-		repeat_rate = 40,
+		repeat_delay = 250,
+		repeat_rate = 25,
 	},
 	general = {
 		gaps_in = 5,
